@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритм Джарвиса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Алгоритм Джарвиса</h1>
+
+        <div class="main-content">
+            <div class="canvas-container">
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <div class="control-panel">
+                <div class="control-group">
+                    <h3>Управление точками</h3>
+                    <button onclick="addRandomPoints(5)">Добавить 5 случайных точек</button>
+                    <button onclick="clearPoints()">Очистить все точки</button>
+                    <button onclick="clearHull()">Очистить оболочку</button>
+                </div>
+                
+                <div class="control-group">
+                    <h3>Алгоритм</h3>
+                    <button onclick="runJarvis()">Запустить алгоритм</button>
+                    <button onclick="stepByStep()">Пошаговое выполнение</button>
+                    <button onclick="resetAlgorithm()">Сброс алгоритма</button>
+                    
+                    <div class="step-controls" id="stepControls" style="display: none;">
+                        <button onclick="nextStep()">Следующий шаг</button>
+                        <button onclick="finishAlgorithm()">Завершить алгоритм</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
